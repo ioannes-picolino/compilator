@@ -1,0 +1,47 @@
+programa
+
+  numero capital, taxa, tempo, jurosSimples, montante;
+  numero receita, custo, lucro;
+  numero quantidade, custoFixo, custoVariavel, custoTotal, precoVenda, receitaTotal;
+  numero margemLucro, precoComMargem;
+
+  // Cálculo de Juros Simples: juros = capital * taxa * tempo
+  leia(capital);
+  leia(taxa);
+  leia(tempo);
+  
+  jurosSimples = capital * taxa * tempo;
+  escreva(jurosSimples);
+
+  // Cálculo de Montante: montante = capital + jurosSimples
+  montante = capital + jurosSimples;
+  escreva(montante);
+
+  // Cálculo de Lucro: lucro = receita - custo
+  leia(receita);
+  leia(custo);
+  
+  lucro = receita - custo;
+  escreva(lucro);
+  
+  // Cálculo de Custo Total: custoTotal = custoFixo + (custoVariavel * quantidade)
+  leia(custoFixo);
+  leia(custoVariavel);
+  leia(quantidade);
+  
+  custoTotal = custoFixo + custoVariavel * quantidade;
+  escreva(custoTotal);
+
+  // Cálculo de Receita Total: receitaTotal = precoVenda * quantidade
+  leia(precoVenda);
+  receitaTotal = precoVenda * quantidade;
+  escreva(receitaTotal);
+
+  // Cálculo de Preço com Margem de Lucro: precoComMargem = custoTotal + (custoTotal * margemLucro)
+  leia(margemLucro); // Margem de lucro como fração, ex: 0.2 para 20%
+  precoComMargem = custoTotal + (custoTotal * margemLucro);
+  escreva(precoComMargem);
+
+fimprog;
+
+
